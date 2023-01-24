@@ -37,7 +37,7 @@
 }
 
 .enemy-nodes{
-  z-index: 10;
+  z-index: 1;
   width: 25px;
   height: 25px;
   background-color: rgb(0, 0, 0);
@@ -45,50 +45,38 @@
 
 .n2{
   position: relative;
-  left: 100px;
-  top: -10px;
-
+  left: 50px;
+  top: -50px;
 }
-
-
-@keyframes append-animate {
-	from {
-	
-	background-color: orange;
-	}
-	to {
-    transform: translate(0px, 370px);
-	  background-color: yellow;
-	}
+.n3{
+  position: relative;
+  left: 100px;
+  top: -75px;
+}
+.n4{
+  position: relative;
+  left: 150px;
+  top: -100px;
+}
+.n5{
+  position: relative;
+  left: 200px;
+  top: -100px;
 }
 
 /* animate new box */
 .enemy {
+  background-color: aqua;
   position: relative;
+  left: 0px;
+  right: 0px;
   margin: 0px;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-	animation: append-animate 10s linear;
 }
 
-.stayStill{
-  background-color: #000000;
-}
-.moveLeft{
-  background-color: aqua;
-  transform: translate(-90%);
-  transition-property: transform;
-  transition-duration:1s;
+.enemy:hover{
+  display: none;
 }
 
-h1 h2{
-
- margin-top: 20px;
-    font-family: 'Caveat', cursive;
-}
-
-p{
-  margin: 8px;
-    font-family: 'Indie Flower', cursive;
-}
